@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "svg-cli-creator"
+version = "0.1.0"
+description = "Raster to SVG CLI with gradients, smoothing, and seam fixing"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+  { name = "SVG CLI Creator" }
+]
+dependencies = [
+  "colorama==0.4.6",
+  "numpy==2.2.6",
+  "opencv-python==4.12.0.88",
+  "svgwrite==1.4.3",
+  "tqdm==4.67.1",
+]
+
+[project.scripts]
+svgify = "vectorize_image:main"
+
+[tool.setuptools]
+# Single-module project, publish the top-level module file
+py-modules = ["vectorize_image"]
