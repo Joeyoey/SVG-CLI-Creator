@@ -233,7 +233,3 @@ venv\Scripts\python.exe vectorize_image.py input.png output_seamfix_balanced.svg
 - Built with `OpenCV`, `NumPy`, `svgwrite`, and `tqdm`.
 
 ---
-
-## License
-
-Add your preferred license here.
